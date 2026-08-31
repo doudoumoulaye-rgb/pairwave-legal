@@ -1,0 +1,149 @@
+/* Aucune police ni feuille de style externe : une page qui parle de vie privée
+   ne doit pas faire d'appel à un serveur tiers pour s'afficher. */
+:root {
+  --bg: #120f16;
+  --surface: #1b1620;
+  --line: #332a3a;
+  --text: #ede9ef;
+  --soft: #8b8090;
+  --faint: #635a6a;
+  --accent: #fb8b24;
+  --plum: #5f0f40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 20px 72px;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 56px 0 32px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
+}
+
+.brand {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.updated {
+  font-size: 13px;
+  color: var(--faint);
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 40px 0 12px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 24px 0 8px;
+}
+
+p,
+li {
+  color: var(--text);
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+ul {
+  margin: 0 0 16px;
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: var(--accent);
+}
+
+strong {
+  font-weight: 600;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px 22px;
+  margin: 20px 0;
+}
+
+.card p:last-child,
+.card ul:last-child {
+  margin-bottom: 0;
+}
+
+.warn {
+  border-color: var(--accent);
+  background: rgba(251, 139, 36, 0.08);
+}
+
+.soft {
+  color: var(--soft);
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--faint);
+}
+
+footer a {
+  color: var(--soft);
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1px 6px;
+}
